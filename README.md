@@ -26,3 +26,7 @@ In the project root run the following, after setting up a virtual environment.
 pip install -r requirements.txt
 pytest
 ```
+
+# Notes
+
+- The code in `src/` probably doesn't need that `__init__.py`, but removing it doesn't fix the problem.
