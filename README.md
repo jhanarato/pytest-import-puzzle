@@ -17,3 +17,12 @@ E   ImportError: attempted relative import with no known parent package
 ```
 
 It's been tricky to fix, so this project is a mimimal implementation to demonstrate and solve the problem.
+
+# Install & Run
+
+In the project root run the following, after setting up a virtual environment.
+
+```commandline
+pip install -r requirements.txt
+pytest
+```
