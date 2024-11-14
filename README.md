@@ -30,3 +30,7 @@ pytest
 # Notes
 
 - The code in `src/` probably doesn't need that `__init__.py`, but removing it doesn't fix the problem.
+
+# Solution
+
+As it turns out, Flatpak copies the source files into the directory `leaftracker_gtk`. When running the application as configured in `leaftracker-gtk.in` that directory is used as a package. In the code in this project we run the source as it is, so relative imports don't work.
